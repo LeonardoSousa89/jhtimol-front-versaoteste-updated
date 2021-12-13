@@ -72,12 +72,16 @@
         a{
           text-decoration:$empty-val;
           color:$alpha;
+          :hover{
+            color:$smoke;
+          }
         }
 
         header{
              //temporario
             border:1px solid $alpha;
-            background-color:$alpha;
+            background:linear-gradient(90deg, $smoke 15%, $dark 85%);
+            color:$alpha;
 
             @media screen and(max-device-width:800px) 
             and(max-device-height:1280px)
@@ -93,8 +97,8 @@
 
             #logo{
                 //temporario
-                border:1px solid $thirdy;
-                background-color:$thirdy;
+                // border:1px solid $thirdy;
+                // background-color:$thirdy;
                 
                 @include area(logo);
 
@@ -104,8 +108,8 @@
             }
             #loja{
                 //temporario
-                border:1px solid $aqua;
-                background-color:$aqua;
+                // border:1px solid $aqua;
+                // background-color:$aqua;
 
                 @include area(loja);
                 @include d_flex(flex,row,space-evenly,space-evenly);
