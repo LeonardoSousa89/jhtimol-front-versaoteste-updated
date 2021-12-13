@@ -9,6 +9,14 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 5% 90% 5%;
   grid-template-areas: "header header" "main     main" "footer footer"; }
+  @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+    body {
+      height: 400vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 8% 87% 5%;
+      grid-template-areas: "header header" "main     main" "footer footer"; } }
   body a {
     text-decoration: none;
     color: #FFFFFF; }
@@ -20,13 +28,19 @@ body {
     grid-template-columns: 30% 70%;
     grid-template-rows: 1fr;
     grid-template-areas: "logo loja"; }
+    @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: portrait) {
+      body header {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo loja"; } }
     body header #logo {
       border: 1px solid #04BEC4;
       background-color: #04BEC4;
       grid-area: logo; }
       body header #logo #jh-timol {
-        height: 135px;
-        width: 135px; }
+        height: 125px;
+        width: 125px; }
     body header #loja {
       border: 1px solid #CCFFEB;
       background-color: #CCFFEB;

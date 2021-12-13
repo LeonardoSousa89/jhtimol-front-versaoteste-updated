@@ -49,6 +49,17 @@
     body{
         border:1px solid red;
 
+        @media screen and(max-device-width:800px) 
+        and(max-device-height:1280px)
+        and (orientation:landscape){
+            @include size(400vh,100vw);
+
+            @include d_grid(grid,1fr,8% 87% 5%,
+            'header header'
+            'main     main'
+            'footer footer');
+        }
+
         font-family: 'Allerta Stencil', sans-serif;
         @include size(300vh,100vw);
         @include percent(0);
@@ -68,6 +79,14 @@
             border:1px solid $alpha;
             background-color:$alpha;
 
+            @media screen and(max-device-width:800px) 
+            and(max-device-height:1280px)
+            and(orientation:portrait)
+            {
+                @include d_grid(grid,40% 60%,1fr,
+                'logo loja');
+            }
+
             @include area(header);
             @include d_grid(grid,30% 70%,1fr,
                             'logo loja');
@@ -80,7 +99,7 @@
                 @include area(logo);
 
                 #jh-timol{
-                    @include size(135px, 135px);
+                    @include size(125px, 125px);
                 }
             }
             #loja{
