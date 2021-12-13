@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+body {
+  border: 1px solid red;
+  font-family: 'Allerta Stencil', sans-serif;
+  height: 300vh;
+  width: 100vw;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 90% 5%;
+  grid-template-areas: "header header" "main     main" "footer footer"; }
+  body header {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo loja"; }
+    body header #logo {
+      border: 1px solid #04BEC4;
+      background-color: #04BEC4;
+      grid-area: logo; }
+    body header #loja {
+      border: 1px solid #CCFFEB;
+      background-color: #CCFFEB;
+      grid-area: loja; }
+  body main {
+    border: 1px solid #03658C;
+    background-color: #03658C;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 30% 20% 30%;
+    grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; }
+    body main #video {
+      border: 1px solid darkred;
+      background-color: darkred;
+      grid-area: video; }
+    body main #prod {
+      border: 1px solid  darkblue;
+      background-color: darkblue;
+      grid-area: prod;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "prod1 prod2" "prod3 prod4"; }
+      @media screen and (max-device-width: 800px) and (max-device-height: 1280px) {
+        body main #prod {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 25% 25% 25% 25%;
+          grid-template-areas: "prod1 prod1" "prod2 prod2" "prod3 prod3" "prod4 prod4"; } }
+      body main #prod #prod1 {
+        border: solid 1px #FFFFFF;
+        color: #FFFFFF;
+        grid-area: prod1; }
+      body main #prod #prod2 {
+        border: solid 1px #FFFFFF;
+        color: #FFFFFF;
+        grid-area: prod2; }
+      body main #prod #prod3 {
+        border: solid 1px #FFFFFF;
+        color: #FFFFFF;
+        grid-area: prod3; }
+      body main #prod #prod4 {
+        border: solid 1px #FFFFFF;
+        color: #FFFFFF;
+        grid-area: prod4; }
+    body main #quemsomos {
+      border: 1px solid  darkseagreen;
+      background-color: darkseagreen;
+      grid-area: quemsomos;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "nos nos" "val val"; }
+      body main #quemsomos #nos {
+        border: 1px solid #FFFFFF;
+        grid-area: nos; }
+      body main #quemsomos #val {
+        border: 1px solid #FFFFFF;
+        grid-area: val; }
+    body main #formulario {
+      border: 1px solid  darksalmon;
+      background-color: darksalmon;
+      grid-area: formulario; }
+  body footer {
+    border: 1px solid black;
+    background-color: black;
+    grid-area: footer; }

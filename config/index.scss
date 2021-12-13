@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+    $alpha:#FFFFFF;
+    $primary:#034C8C;
+    $secondary:#03658C;
+    $thirdy:#04BEC4;
+    $aqua:#CCFFEB;
+    $dark:black;
+    $smoke:whitesmoke;
+    $val:0.5em;
+    $empty-val:none;
+    $hidden:hidden;
+    $point:pointer;
+    $center:center;
+    $full:100%;
+    $null:0;
+    $half-rem:0.5rem;
+    $half-twelve:6px;
+
+    @mixin area($areas){
+        grid-area:$areas;
+   }
+   @mixin d_grid($g_display,$columns,$rows,$g_areas){
+       display:$g_display;
+       grid-template-columns:$columns;
+       grid-template-rows:$rows;
+       grid-template-areas:$g_areas;
+     }
+   @mixin d_flex($f_display,$direction,$justify,$align){
+       display:$f_display;
+       flex-direction:$direction;
+       justify-content:$justify;
+       align-items:$align;
+   }
+   @mixin size($hgt,$wdt){
+       height:$hgt;
+       width:$wdt;
+   }
+   @mixin f_size($font){
+       font-size:$font;
+   }
+   @mixin radius($bdr){
+        border-radius:$bdr; 
+   }
+   @mixin percent($p_vh){
+        margin:$p_vh;
+   } 
+   
+    body{
+        border:1px solid red;
+
+        font-family: 'Allerta Stencil', sans-serif;
+        @include size(300vh,100vw);
+        @include percent(0);
+
+        @include d_grid(grid,1fr,5% 90% 5%,
+                        'header header'
+                        'main     main'
+                        'footer footer');
+
+        header{
+             //temporario
+            border:1px solid $alpha;
+            background-color:$alpha;
+
+            @include area(header);
+            @include d_grid(grid,30% 70%,1fr,
+                            'logo loja');
+
+            #logo{
+                //temporario
+                border:1px solid $thirdy;
+                background-color:$thirdy;
+                
+                @include area(logo);
+            }
+            #loja{
+                //temporario
+                border:1px solid $aqua;
+                background-color:$aqua;
+
+                @include area(loja);
+            }
+        }
+        main{
+            //temporario
+            border:1px solid $secondary;
+            background-color:$secondary;
+
+            @include area(main);
+            @include d_grid(grid,1fr,20% 30% 20% 30%,
+                            'video           video'
+                            'prod             prod'
+                            'quemsomos   quemsomos'
+                            'formulario formulario');
+
+            #video{
+                //temporario
+                border:1px solid darkred;
+                background-color:darkred;
+
+                @include area(video);
+            }
+            #prod{
+                //temporario
+                border:1px solid  darkblue;
+                background-color: darkblue;
+
+                @media screen and(max-device-width:800px) 
+                and(max-device-height:1280px)
+                {
+                    @include d_grid(grid,1fr,25% 25% 25% 25%,
+                    'prod1 prod1'
+                    'prod2 prod2'
+                    'prod3 prod3'
+                    'prod4 prod4');
+                }
+
+                @include area(prod);
+                @include d_grid(grid,1fr 1fr,50% 50%,
+                                'prod1 prod2'
+                                'prod3 prod4');
+                
+                #prod1{
+                    border:solid 1px $alpha;
+                    color:$alpha;
+                    @include area(prod1);
+                }
+                #prod2{
+                    border:solid 1px $alpha;
+                    color:$alpha;
+                    @include area(prod2);
+                }
+                #prod3{
+                    border:solid 1px $alpha;
+                    color:$alpha;
+                    @include area(prod3);
+                }
+                #prod4{
+                    border:solid 1px $alpha;
+                    color:$alpha;
+                    @include area(prod4);
+                }
+            }
+            #quemsomos{
+                 //temporario
+                 border:1px solid  darkseagreen;
+                 background-color: darkseagreen;
+
+                 @include area(quemsomos);
+                 @include d_grid(grid,1fr,50% 50%,
+                                'nos nos'
+                                'val val');
+                 
+                 #nos{
+                    border:1px solid  $alpha;
+                    @include area(nos);
+                 }
+                 #val{
+                    border:1px solid  $alpha;
+                    @include area(val);
+                 }
+            }
+            #formulario{
+                 //temporario
+                 border:1px solid  darksalmon;
+                 background-color: darksalmon;
+
+                 @include area(formulario);
+            }
+        }
+        footer{
+            //temporario
+            border:1px solid black;
+            background-color:black;
+
+            @include area(footer);
+        }
+    }
