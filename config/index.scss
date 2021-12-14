@@ -134,6 +134,10 @@
                 background-color:darkred;
 
                 @include area(video);
+
+                #videotape{
+                    @include size(100%,100%);
+                }
             }
             #prod{
                 //temporario
@@ -156,24 +160,27 @@
                                 'prod3 prod4');
                 
                 #prod1{
-                    border:solid 1px $alpha;
-                    color:$alpha;
+                    border:solid 1px rgba($color: #000000, $alpha: 0.09);
+                    background-color:$smoke;
                     @include area(prod1);
                 }
                 #prod2{
-                    border:solid 1px $alpha;
-                    color:$alpha;
+                    border:solid 1px rgba($color: #000000, $alpha: 0.09);
+                    background-color:$smoke;
                     @include area(prod2);
                 }
                 #prod3{
-                    border:solid 1px $alpha;
-                    color:$alpha;
+                    border:solid 1px rgba($color: #000000, $alpha: 0.09);
+                    background-color:$smoke;
                     @include area(prod3);
                 }
                 #prod4{
-                    border:solid 1px $alpha;
-                    color:$alpha;
+                    border:solid 1px rgba($color: #000000, $alpha: 0.09);
+                    background-color:$smoke;
                     @include area(prod4);
+                }
+                #top,#mini,#residence,#top5{
+                    @include size(100%,100%);
                 }
             }
             #quemsomos{
