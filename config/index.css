@@ -59,6 +59,14 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 20% 30% 20% 30%;
     grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; }
+    @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: portrait) {
+      body main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 20% 40% 20%;
+        grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; }
+        body main ul {
+          margin-right: 20px; } }
     body main #video {
       border: 1px solid darkred;
       background-color: darkred;
@@ -100,19 +108,40 @@ body {
         height: 100%;
         width: 100%; }
     body main #quemsomos {
-      border: 1px solid  darkseagreen;
-      background-color: darkseagreen;
+      background-color: #034C8C;
+      color: #FFFFFF;
+      padding: 10px;
       grid-area: quemsomos;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 50% 50%;
       grid-template-areas: "nos nos" "val val"; }
       body main #quemsomos #nos {
-        border: 1px solid #FFFFFF;
         grid-area: nos; }
+        body main #quemsomos #nos #somos-titulo {
+          text-align: center;
+          border: solid 1px #FFFFFF;
+          background-color: whitesmoke;
+          color: #034C8C;
+          margin-bottom: 5px; }
+        body main #quemsomos #nos #somos {
+          background-color: whitesmoke;
+          color: #034C8C; }
+          body main #quemsomos #nos #somos i {
+            color: #034C8C; }
       body main #quemsomos #val {
-        border: 1px solid #FFFFFF;
         grid-area: val; }
+        body main #quemsomos #val #val-titulo {
+          text-align: center;
+          border: solid 1px #FFFFFF;
+          background-color: whitesmoke;
+          color: #034C8C;
+          margin-bottom: 5px; }
+        body main #quemsomos #val #mivival {
+          text-align: center;
+          border: solid 1px #FFFFFF;
+          background-color: whitesmoke;
+          color: #034C8C; }
     body main #formulario {
       border: 1px solid  darksalmon;
       background-color: darksalmon;

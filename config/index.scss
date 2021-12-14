@@ -49,6 +49,7 @@
     body{
         border:1px solid red;
 
+        //mobile
         @media screen and(max-device-width:800px) 
         and(max-device-height:1280px)
         and (orientation:landscape){
@@ -59,6 +60,7 @@
             'main     main'
             'footer footer');
         }
+        //mobile
 
         font-family: 'Allerta Stencil', sans-serif;
         @include size(300vh,100vw);
@@ -80,9 +82,11 @@
         header{
              //temporario
             border:1px solid $alpha;
+
             background:linear-gradient(90deg, $smoke 15%, $dark 85%);
             color:$alpha;
 
+            //mobile
             @media screen and(max-device-width:800px) 
             and(max-device-height:1280px)
             and(orientation:portrait)
@@ -94,6 +98,7 @@
                     display:$empty-val;
                 }
             }
+            //mobile
 
             @include area(header);
             @include d_grid(grid,30% 70%,1fr,
@@ -125,6 +130,23 @@
             border:1px solid $secondary;
             background-color:$secondary;
 
+            //mobile
+            @media screen and(max-device-width:800px) 
+            and(max-device-height:1280px)
+            and (orientation:portrait)
+            {
+                @include d_grid(grid,1fr,20% 20% 40% 20%,
+                'video           video'
+                'prod             prod'
+                'quemsomos   quemsomos'
+                'formulario formulario');
+                
+                ul{
+                    margin-right:20px;
+                }
+            }
+            //mobile
+
             @include area(main);
             @include d_grid(grid,1fr,20% 30% 20% 30%,
                             'video           video'
@@ -148,6 +170,7 @@
                 border:1px solid  darkblue;
                 background-color: darkblue;
 
+                //mobile
                 @media screen and(max-device-width:800px) 
                 and(max-device-height:1280px)
                 {
@@ -157,6 +180,7 @@
                     'prod3 prod3'
                     'prod4 prod4');
                 }
+                //mobile
 
                 @include area(prod);
                 @include d_grid(grid,1fr 1fr,50% 50%,
@@ -188,22 +212,55 @@
                 }
             }
             #quemsomos{
-                 //temporario
-                 border:1px solid  darkseagreen;
-                 background-color: darkseagreen;
+                 background-color: $primary;
+                 color:$alpha;
+
+                padding:10px;
 
                  @include area(quemsomos);
                  @include d_grid(grid,1fr,50% 50%,
                                 'nos nos'
-                                'val val');
-                 
+                                'val val');   
+
                  #nos{
-                    border:1px solid  $alpha;
+                    // border:1px solid  $alpha;
                     @include area(nos);
+
+                    #somos-titulo{
+                        text-align:center;
+                        border:solid 1px $alpha;
+                        background-color:$smoke;
+                        color:$primary;
+
+                        margin-bottom:5px;
+                    }
+                    #somos{
+                        background-color:$smoke;
+                        color:$primary;
+
+                        i{
+                            color:$primary;
+                        }
+                    }
+
                  }
                  #val{
-                    border:1px solid  $alpha;
                     @include area(val);
+
+                    #val-titulo{
+                        text-align:center;
+                        border:solid 1px $alpha;
+                        background-color:$smoke;
+                        color:$primary;
+
+                        margin-bottom:5px;
+                    }
+                    #mivival{
+                        text-align:center;
+                        border:solid 1px $alpha;
+                        background-color:$smoke;
+                        color:$primary;
+                    }
                  }
             }
             #formulario{
