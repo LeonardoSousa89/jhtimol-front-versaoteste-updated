@@ -11,7 +11,7 @@ body {
   grid-template-areas: "header header" "main     main" "footer footer"; }
   @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
     body {
-      height: 400vh;
+      height: 600vh;
       width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
@@ -126,7 +126,8 @@ body {
           margin-bottom: 5px; }
         body main #quemsomos #nos #somos {
           background-color: whitesmoke;
-          color: #034C8C; }
+          color: #034C8C;
+          padding: 10px; }
           body main #quemsomos #nos #somos i {
             color: #034C8C; }
       body main #quemsomos #val {

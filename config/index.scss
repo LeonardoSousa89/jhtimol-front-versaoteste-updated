@@ -53,7 +53,7 @@
         @media screen and(max-device-width:800px) 
         and(max-device-height:1280px)
         and (orientation:landscape){
-            @include size(400vh,100vw);
+            @include size(600vh,100vw);
 
             @include d_grid(grid,1fr,8% 87% 5%,
             'header header'
@@ -226,6 +226,7 @@
                     // border:1px solid  $alpha;
                     @include area(nos);
 
+
                     #somos-titulo{
                         text-align:center;
                         border:solid 1px $alpha;
@@ -237,6 +238,7 @@
                     #somos{
                         background-color:$smoke;
                         color:$primary;
+                        padding:10px;
 
                         i{
                             color:$primary;
