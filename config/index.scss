@@ -89,6 +89,10 @@
             {
                 @include d_grid(grid,40% 60%,1fr,
                 'logo loja');
+                
+                #pipe{
+                    display:$empty-val;
+                }
             }
 
             @include area(header);
@@ -112,7 +116,7 @@
                 // background-color:$aqua;
 
                 @include area(loja);
-                @include d_flex(flex,row,space-evenly,space-evenly);
+                @include d_flex(flex,row,space-between,space-between);
                 padding:25px;
             }
         }

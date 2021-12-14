@@ -36,7 +36,9 @@ body {
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
-        grid-template-areas: "logo loja"; } }
+        grid-template-areas: "logo loja"; }
+        body header #pipe {
+          display: none; } }
     body header #logo {
       grid-area: logo; }
       body header #logo #jh-timol {
@@ -46,8 +48,8 @@ body {
       grid-area: loja;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-      align-items: space-evenly;
+      justify-content: space-between;
+      align-items: space-between;
       padding: 25px; }
   body main {
     border: 1px solid #03658C;
