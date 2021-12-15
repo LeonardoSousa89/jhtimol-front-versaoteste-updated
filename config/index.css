@@ -169,7 +169,6 @@ body {
       body main #formulario #email, body main #formulario #enviar {
         margin-bottom: 20px; }
   body footer {
-    border: 1px solid red;
     background-color: black;
     overflow: hidden;
     color: #FFFFFF;
