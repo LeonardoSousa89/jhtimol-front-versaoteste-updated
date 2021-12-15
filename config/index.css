@@ -72,6 +72,12 @@ body {
         grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; }
         body main ul {
           margin-right: 20px; } }
+    @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+      body main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 30% 38% 27%;
+        grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; } }
     body main #video {
       background-color: darkred;
       grid-area: video; }
