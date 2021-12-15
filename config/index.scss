@@ -59,6 +59,10 @@
             'header header'
             'main     main'
             'footer footer');
+
+            #zap{
+                @include size(17vh,33vw);
+            }   
         }
 
         @media screen and(max-device-width:800px) 
@@ -70,6 +74,10 @@
             'header header'
             'main     main'
             'footer footer');
+
+            #zap{
+                @include size(17vh,27vw);
+            }   
         }
         //mobile
 
