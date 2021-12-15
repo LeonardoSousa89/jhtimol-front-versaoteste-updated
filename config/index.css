@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
 body {
-  border: 1px solid red;
   font-family: 'Allerta Stencil', sans-serif;
   height: 300vh;
   width: 100vw;
@@ -23,7 +22,6 @@ body {
     body a :hover {
       color: whitesmoke; }
   body header {
-    border: 1px solid #FFFFFF;
     background: linear-gradient(90deg, #04BEC4 15%, #034C8C 85%);
     color: #FFFFFF;
     grid-area: header;
@@ -52,7 +50,6 @@ body {
       align-items: space-between;
       padding: 25px; }
   body main {
-    border: 1px solid #03658C;
     background-color: #03658C;
     grid-area: main;
     display: grid;
@@ -68,14 +65,12 @@ body {
         body main ul {
           margin-right: 20px; } }
     body main #video {
-      border: 1px solid darkred;
       background-color: darkred;
       grid-area: video; }
       body main #video #videotape {
         height: 100%;
         width: 100%; }
     body main #prod {
-      border: 1px solid  darkblue;
       background-color: darkblue;
       grid-area: prod;
       display: grid;
@@ -144,7 +139,6 @@ body {
           background-color: whitesmoke;
           color: #034C8C; }
     body main #formulario {
-      border: 1px solid  red;
       background-color: whitesmoke;
       grid-area: formulario;
       padding: 10px;
@@ -155,6 +149,5 @@ body {
       body main #formulario #email, body main #formulario #enviar {
         margin-bottom: 20px; }
   body footer {
-    border: 1px solid black;
     background-color: black;
     grid-area: footer; }
