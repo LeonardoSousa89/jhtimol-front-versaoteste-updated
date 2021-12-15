@@ -163,7 +163,7 @@
             and(max-device-height:1280px)
             and (orientation:landscape)
             {
-                @include d_grid(grid,1fr,10% 30% 38% 27%,
+                @include d_grid(grid,1fr,24% 30% 24% 27%,
                 'video           video'
                 'prod             prod'
                 'quemsomos   quemsomos'
