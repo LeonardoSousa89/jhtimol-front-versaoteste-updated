@@ -52,8 +52,8 @@
         //mobile
         @media screen and(max-device-width:800px) 
         and(max-device-height:1280px)
-        and (orientation:landscape){
-            @include size(600vh,100vw);
+        and (orientation:portrait){
+            @include size(300vh,100vw);
 
             @include d_grid(grid,1fr,8% 87% 5%,
             'header header'
@@ -83,7 +83,7 @@
              //temporario
             border:1px solid $alpha;
 
-            background:linear-gradient(90deg, $smoke 15%, $dark 85%);
+            background:linear-gradient(90deg, $thirdy 15%, $primary 85%);
             color:$alpha;
 
             //mobile
@@ -99,6 +99,8 @@
                 }
             }
             //mobile
+
+            
 
             @include area(header);
             @include d_grid(grid,30% 70%,1fr,
@@ -135,7 +137,7 @@
             and(max-device-height:1280px)
             and (orientation:portrait)
             {
-                @include d_grid(grid,1fr,20% 20% 40% 20%,
+                @include d_grid(grid,1fr,10% 30% 40% 20%,
                 'video           video'
                 'prod             prod'
                 'quemsomos   quemsomos'

@@ -9,9 +9,9 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 5% 90% 5%;
   grid-template-areas: "header header" "main     main" "footer footer"; }
-  @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+  @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: portrait) {
     body {
-      height: 600vh;
+      height: 300vh;
       width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
@@ -24,7 +24,7 @@ body {
       color: whitesmoke; }
   body header {
     border: 1px solid #FFFFFF;
-    background: linear-gradient(90deg, whitesmoke 15%, black 85%);
+    background: linear-gradient(90deg, #04BEC4 15%, #034C8C 85%);
     color: #FFFFFF;
     grid-area: header;
     display: grid;
@@ -63,7 +63,7 @@ body {
       body main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 20% 40% 20%;
+        grid-template-rows: 10% 30% 40% 20%;
         grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; }
         body main ul {
           margin-right: 20px; } }
