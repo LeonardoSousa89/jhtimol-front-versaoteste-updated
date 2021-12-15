@@ -10,7 +10,7 @@ body {
   grid-template-areas: "header header" "main     main" "footer footer"; }
   @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: portrait) {
     body {
-      height: 400vh;
+      height: 300vh;
       width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
