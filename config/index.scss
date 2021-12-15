@@ -137,7 +137,7 @@
             and(max-device-height:1280px)
             and (orientation:portrait)
             {
-                @include d_grid(grid,1fr,10% 30% 40% 20%,
+                @include d_grid(grid,1fr,10% 30% 35% 25%,
                 'video           video'
                 'prod             prod'
                 'quemsomos   quemsomos'
