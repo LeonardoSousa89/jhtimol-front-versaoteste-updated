@@ -157,6 +157,10 @@
                 ul{
                     margin-right:20px;
                 }
+
+                #msg{
+                    margin-top:5px;
+                }
             }
 
             @media screen and(max-device-width:800px) 
@@ -168,6 +172,10 @@
                 'prod             prod'
                 'quemsomos   quemsomos'
                 'formulario formulario');
+
+                #msg{
+                    margin-top:5px;
+                }
             }
             //mobile
 
@@ -300,7 +308,10 @@
 
                
                      text-align:center;
-            
+                 
+                 #msg{
+                     margin-top:50px;
+                 }
                  #msg,#nome{
                      margin-bottom:10px;
                  }
