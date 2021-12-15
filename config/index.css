@@ -78,7 +78,7 @@ body {
       body main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 24% 30% 24% 27%;
+        grid-template-rows: 24% 30% 20% 26%;
         grid-template-areas: "video           video" "prod             prod" "quemsomos   quemsomos" "formulario formulario"; }
         body main #msg {
           margin-top: 5px; } }
