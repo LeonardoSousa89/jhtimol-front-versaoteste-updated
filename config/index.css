@@ -163,11 +163,41 @@ body {
       overflow-y: scroll;
       text-align: center; }
       body main #formulario #msg {
-        margin-top: 50px; }
+        margin-top: 100px; }
       body main #formulario #msg, body main #formulario #nome {
         margin-bottom: 10px; }
       body main #formulario #email, body main #formulario #enviar {
         margin-bottom: 20px; }
   body footer {
+    border: 1px solid red;
     background-color: black;
-    grid-area: footer; }
+    overflow: hidden;
+    color: #FFFFFF;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "redes redes" "copyright copyright"; }
+    body footer #redes {
+      grid-area: redes;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 40% 60%;
+      grid-template-areas: "redes-msg redes-msg" "redes-icone redes-icone"; }
+      body footer #redes #redes-msg {
+        grid-area: redes-msg;
+        text-align: center; }
+      body footer #redes #redes-icone {
+        grid-area: redes-icone;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: space-evenly; }
+    body footer #copy {
+      grid-area: copyright;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end; }
+      body footer #copy #rights {
+        font-size: xx-small; }

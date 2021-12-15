@@ -310,7 +310,7 @@
                      text-align:center;
                  
                  #msg{
-                     margin-top:50px;
+                     margin-top:100px;
                  }
                  #msg,#nome{
                      margin-bottom:10px;
@@ -324,9 +324,43 @@
         }
         footer{
             //temporario
-            // border:1px solid black;
+            border:1px solid red;
             background-color:black;
 
+            overflow: hidden;
+            color:$alpha;
+
             @include area(footer);
+            @include d_grid(grid,1fr,60% 40%, 
+                            'redes redes'
+                            'copyright copyright');
+
+            #redes{
+                // border:solid 1px red;
+                @include area(redes);
+                @include d_grid(grid,1fr,40% 60%,
+                                'redes-msg redes-msg'
+                                'redes-icone redes-icone');
+                
+                #redes-msg{
+                    // border:solid 1px red;
+                    @include area(redes-msg);
+                    text-align:center;
+                }
+                #redes-icone{
+                    // border:solid 1px red;
+                    @include area(redes-icone);
+                    @include d_flex(flex,row,space-evenly,space-evenly);
+                }
+            }
+            #copy{
+                // border:solid 1px red;
+                @include area(copyright);
+                @include d_flex(flex,row,center,flex-end);
+
+                #rights{
+                    @include f_size(xx-small);
+                }
+            }
         }
     }
