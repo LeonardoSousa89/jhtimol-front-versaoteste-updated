@@ -53,7 +53,7 @@
         @media screen and(max-device-width:800px) 
         and(max-device-height:1280px)
         and (orientation:portrait){
-            @include size(450vh,100vw);
+            @include size(400vh,100vw);
 
             @include d_grid(grid,1fr,5% 90% 5%,
             'header header'
