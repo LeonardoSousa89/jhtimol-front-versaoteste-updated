@@ -66,10 +66,10 @@
         and (orientation:landscape){
             @include size(600vh,100vw);
 
-            // @include d_grid(grid,1fr,5% 90% 5%,
-            // 'header header'
-            // 'main     main'
-            // 'footer footer');
+            @include d_grid(grid,1fr,5% 85% 10%,
+            'header header'
+            'main     main'
+            'footer footer');
         }
         //mobile
 
