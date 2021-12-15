@@ -141,7 +141,7 @@ body {
     body main #formulario {
       background-color: whitesmoke;
       grid-area: formulario;
-      padding: 10px;
+      padding: 12px;
       overflow-y: scroll;
       text-align: center; }
       body main #formulario #msg, body main #formulario #nome {
