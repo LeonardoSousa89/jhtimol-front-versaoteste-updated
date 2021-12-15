@@ -55,7 +55,7 @@
         and (orientation:portrait){
             @include size(300vh,100vw);
 
-            @include d_grid(grid,1fr,8% 87% 5%,
+            @include d_grid(grid,1fr,5% 90% 5%,
             'header header'
             'main     main'
             'footer footer');
@@ -269,10 +269,24 @@
             }
             #formulario{
                  //temporario
-                 border:1px solid  darksalmon;
+                 border:1px solid  red;
                  background-color: $smoke;
 
                  @include area(formulario);
+                 padding:10px;
+                 overflow-y:scroll;
+
+               
+                     text-align:center;
+            
+                 #msg,#nome{
+                     margin-bottom:10px;
+                 }
+
+                 #email,#enviar{
+                    margin-bottom:20px;
+                 }
+
             }
         }
         footer{

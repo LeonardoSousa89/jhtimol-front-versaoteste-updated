@@ -15,7 +15,7 @@ body {
       width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 8% 87% 5%;
+      grid-template-rows: 5% 90% 5%;
       grid-template-areas: "header header" "main     main" "footer footer"; } }
   body a {
     text-decoration: none;
@@ -144,9 +144,16 @@ body {
           background-color: whitesmoke;
           color: #034C8C; }
     body main #formulario {
-      border: 1px solid  darksalmon;
+      border: 1px solid  red;
       background-color: whitesmoke;
-      grid-area: formulario; }
+      grid-area: formulario;
+      padding: 10px;
+      overflow-y: scroll;
+      text-align: center; }
+      body main #formulario #msg, body main #formulario #nome {
+        margin-bottom: 10px; }
+      body main #formulario #email, body main #formulario #enviar {
+        margin-bottom: 20px; }
   body footer {
     border: 1px solid black;
     background-color: black;
