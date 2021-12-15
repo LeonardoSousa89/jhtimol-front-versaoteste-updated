@@ -60,6 +60,17 @@
             'main     main'
             'footer footer');
         }
+
+        @media screen and(max-device-width:800px) 
+        and(max-device-height:1280px)
+        and (orientation:landscape){
+            @include size(600vh,100vw);
+
+            // @include d_grid(grid,1fr,5% 90% 5%,
+            // 'header header'
+            // 'main     main'
+            // 'footer footer');
+        }
         //mobile
 
         font-family: 'Allerta Stencil', sans-serif;
