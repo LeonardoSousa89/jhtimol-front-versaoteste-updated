@@ -73,7 +73,7 @@ body {
         body main ul {
           margin-right: 20px; }
         body main #msg {
-          margin-top: 5px; } }
+          margin-top: 3px; } }
     @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
       body main {
         display: grid;
