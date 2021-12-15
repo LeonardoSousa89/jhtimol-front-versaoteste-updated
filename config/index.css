@@ -15,10 +15,7 @@ body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 5% 90% 5%;
-      grid-template-areas: "header header" "main     main" "footer footer"; }
-      body #zap {
-        height: 17vh;
-        width: 33vw; } }
+      grid-template-areas: "header header" "main     main" "footer footer"; } }
   @media screen and (max-device-width: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
     body {
       height: 600vh;
@@ -26,10 +23,7 @@ body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 5% 90% 5%;
-      grid-template-areas: "header header" "main     main" "footer footer"; }
-      body #zap {
-        height: 17vh;
-        width: 27vw; } }
+      grid-template-areas: "header header" "main     main" "footer footer"; } }
   body a {
     text-decoration: none;
     color: #FFFFFF; }

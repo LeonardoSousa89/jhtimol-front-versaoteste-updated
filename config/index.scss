@@ -47,8 +47,6 @@
    } 
    
     body{
-        // border:1px solid red;
-
         //mobile
         @media screen and(max-device-width:800px) 
         and(max-device-height:1280px)
@@ -59,10 +57,6 @@
             'header header'
             'main     main'
             'footer footer');
-
-            #zap{
-                @include size(17vh,33vw);
-            }   
         }
 
         @media screen and(max-device-width:800px) 
@@ -74,10 +68,6 @@
             'header header'
             'main     main'
             'footer footer');
-
-            #zap{
-                @include size(17vh,27vw);
-            }   
         }
         //mobile
 
@@ -108,9 +98,6 @@
         }   
 
         header{
-             //temporario
-            // border:1px solid $alpha;
-
             background:linear-gradient(90deg, $thirdy 15%, $primary 85%);
             color:$alpha;
 
@@ -135,10 +122,6 @@
                             'logo loja');
 
             #logo{
-                //temporario
-                // border:1px solid $thirdy;
-                // background-color:$thirdy;
-                
                 @include area(logo);
 
                 #jh-timol{
@@ -146,18 +129,12 @@
                 }
             }
             #loja{
-                //temporario
-                // border:1px solid $aqua;
-                // background-color:$aqua;
-
                 @include area(loja);
                 @include d_flex(flex,row,space-between,space-between);
                 padding:25px;
             }
         }
         main{
-            //temporario
-            // border:1px solid $secondary;
             background-color:$secondary;
 
             //mobile
@@ -204,8 +181,6 @@
                             'formulario formulario');
 
             #video{
-                //temporario
-                // border:1px solid darkred;
                 background-color:darkred;
 
                 @include area(video);
@@ -215,8 +190,6 @@
                 }
             }
             #prod{
-                //temporario
-                // border:1px solid  darkblue;
                 background-color: darkblue;
 
                 //mobile
@@ -272,7 +245,6 @@
                                 'val val');   
 
                  #nos{
-                    // border:1px solid  $alpha;
                     @include area(nos);
 
 
@@ -315,8 +287,6 @@
                  }
             }
             #formulario{
-                 //temporario
-                //  border:1px solid  red;
                  background-color: $smoke;
 
                  @include area(formulario);
@@ -340,8 +310,6 @@
             }
         }
         footer{
-            //temporario
-            // border:1px solid red;
             background-color:black;
 
             color:$alpha;
@@ -352,25 +320,21 @@
                             'copyright copyright');
 
             #redes{
-                // border:solid 1px red;
                 @include area(redes);
                 @include d_grid(grid,1fr,40% 60%,
                                 'redes-msg redes-msg'
                                 'redes-icone redes-icone');
                 
                 #redes-msg{
-                    // border:solid 1px red;
                     @include area(redes-msg);
                     text-align:center;
                 }
                 #redes-icone{
-                    // border:solid 1px red;
                     @include area(redes-icone);
                     @include d_flex(flex,row,space-evenly,space-evenly);
                 }
             }
             #copy{
-                // border:solid 1px red;
                 @include area(copyright);
                 @include d_flex(flex,row,center,flex-end);
 
