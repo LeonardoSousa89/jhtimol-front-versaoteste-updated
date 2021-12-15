@@ -53,7 +53,7 @@
         @media screen and(max-device-width:800px) 
         and(max-device-height:1280px)
         and (orientation:portrait){
-            @include size(300vh,100vw);
+            @include size(450vh,100vw);
 
             @include d_grid(grid,1fr,5% 90% 5%,
             'header header'
@@ -148,7 +148,7 @@
             and(max-device-height:1280px)
             and (orientation:portrait)
             {
-                @include d_grid(grid,1fr,10% 30% 38% 27%,
+                @include d_grid(grid,1fr,10% 30% 33% 32%,
                 'video           video'
                 'prod             prod'
                 'quemsomos   quemsomos'
@@ -327,7 +327,6 @@
             // border:1px solid red;
             background-color:black;
 
-            overflow: hidden;
             color:$alpha;
 
             @include area(footer);
