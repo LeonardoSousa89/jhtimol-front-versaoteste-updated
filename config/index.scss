@@ -270,7 +270,7 @@
             #formulario{
                  //temporario
                  border:1px solid  darksalmon;
-                 background-color: darksalmon;
+                 background-color: $smoke;
 
                  @include area(formulario);
             }

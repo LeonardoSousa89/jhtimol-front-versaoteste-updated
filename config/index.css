@@ -145,7 +145,7 @@ body {
           color: #034C8C; }
     body main #formulario {
       border: 1px solid  darksalmon;
-      background-color: darksalmon;
+      background-color: whitesmoke;
       grid-area: formulario; }
   body footer {
     border: 1px solid black;
