@@ -29,6 +29,13 @@ body {
     color: #FFFFFF; }
     body a :hover {
       color: whitesmoke; }
+  body #absoluto {
+    position: fixed;
+    margin-left: 25vw; }
+  body #zap {
+    height: 17vh;
+    width: 12vw;
+    cursor: pointer; }
   body header {
     background: linear-gradient(90deg, #04BEC4 15%, #034C8C 85%);
     color: #FFFFFF;

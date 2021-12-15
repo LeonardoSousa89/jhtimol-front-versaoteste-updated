@@ -90,6 +90,15 @@
           }
         }
 
+        #absoluto{
+            position:fixed;
+            margin-left:25vw;
+        }
+        #zap{
+            @include size(17vh,12vw);
+            cursor:$point;
+        }   
+
         header{
              //temporario
             // border:1px solid $alpha;
